@@ -1,0 +1,84 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    background-image: url(/assets/background/messages_light_colour_background.jpg);
+}
+
+#feed-container {
+    display: flex;
+    flex-direction: column;
+
+    width: 60%;
+    height: 270vh;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+.post-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.user-info {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    padding: 5px 10%;
+}
+
+.profile-pic {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    border: 3px solid dodgerblue;
+}
+
+.profile-pic > img {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.post {
+    display: flex;
+    justify-content: center;
+}
+
+.post img {
+    border: 5px solid lightblue;
+    border-radius: 15px;
+}
+
+.post > img {
+    width: 80%;
+}
+
+.interaction-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.interaction-container  .icon {
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+}
+
+.interaction-container .like .icon:hover {
+    outline-color: red;
+}
+
+hr {
+    width: 80%;
+}
+
+.break hr {
+    width: 95%;
+}
